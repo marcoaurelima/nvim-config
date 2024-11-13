@@ -16,6 +16,12 @@ map("n", "<leader>X", ":BufOnly<CR>", { desc = "BufOnly" })
 map("n", "|", ":vsp<CR>", { desc = "Split Vertical" })
 map("n", "<leader><ESC>", ":q<CR>", { desc = "Close cmd" })
 
+-- Dap
+map("n", "<leader>dz", "<Cmd> lua require'dap'.clear_breakpoints()<CR>", { desc = "Clear Breakpoints" })
+map("n", "<leader>dl", "<Cmd> lua require'dap'.list_breakpoints() <CR>", { desc = "List Breakpoints" }) -- não funciona ainda
+
+map("n", "<leader>rr", ":edit!<CR>", { desc = "Discard file changes" })
+
 -- Telescope
 map("n", "<leader>fs", "<Cmd>Telescope lsp_document_symbols<CR>", { desc = "Find LSP symbols" })
 map("n", "<leader>ft", "<Cmd>Telescope treesitter<CR>", { desc = "Find treesitter symbols" })
