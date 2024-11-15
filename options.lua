@@ -6,3 +6,4 @@ require "nvchad.options"
 -- o.cursorlineopt ='both' -- to enable cursorline!
 
 vim.o.relativenumber = true
+vim.o.timeoutlen = 300
